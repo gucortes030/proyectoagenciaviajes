@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="648.0" prefWidth="558.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.VistaRegistrarUsuarioController">
+   <children>
+      <Label fx:id="lblTituloRegUsu" layoutX="79.0" layoutY="31.0" text="Xacum" textFill="#e67116">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCrearCueRegUsu" layoutX="166.0" layoutY="92.0" text="Crear cuenta">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="46.0" layoutY="156.0" prefHeight="381.0" prefWidth="467.0" style="-fx-border-color: #E67116; -fx-border-width: 5; -fx-border-radius: 15 15 15 15; -fx-background-color: #FDFEFE;">
+         <children>
+            <Label fx:id="lblCorreoRegUsu" layoutX="14.0" layoutY="14.0" text="Correo electronico">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCorreoRegUsu" layoutX="14.0" layoutY="53.0" prefHeight="47.0" prefWidth="439.0" style="-fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" />
+            <Label fx:id="lblContraseñaRegUsu" layoutX="14.0" layoutY="119.0" text="Contraseña">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtContraseñaRegUsu" layoutX="14.0" layoutY="156.0" style="-fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" />
+            <Label fx:id="lblRepContraseñaRegUsu" layoutX="14.0" layoutY="226.0" text="Repetir contraseña">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtRepContraseñaRegUsu" layoutX="15.0" layoutY="257.0" prefHeight="45.0" prefWidth="261.0" style="-fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" />
+            <Label fx:id="lblCaracteresRegUsu" layoutX="15.0" layoutY="315.0" text="*Minimo 4 caracteres" textFill="#e67116">
+               <font>
+                  <Font name="System Italic" size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnRegUsu" layoutX="391.0" layoutY="553.0" mnemonicParsing="false" onAction="#ClickEventBtnSiguiente" style="-fx-background-color: #E67116; -fx-border-radius: 20 20 20 20;" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="94.0" fitWidth="75.0" layoutX="4.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/DienteLeon4.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVolver" layoutX="51.0" layoutY="537.0" mnemonicParsing="false" onAction="#ClickEventBtnVolver" prefHeight="76.0" prefWidth="143.0" style="-fx-background-color: #ffffff;" text="Volver" textFill="#e67116">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

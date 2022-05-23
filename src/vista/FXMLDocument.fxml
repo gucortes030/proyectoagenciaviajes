@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="509.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FXMLDocumentController">
+    <children>
+        <Label fx:id="lblTitulo" layoutX="250.0" layoutY="35.0" minHeight="16" minWidth="69" prefHeight="64.0" prefWidth="111.0" text="Xacum" textFill="#e36d19dc">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="36.0" />
+         </font></Label>
+      <Pane fx:id="panelIniSesion" layoutX="37.0" layoutY="174.0" prefHeight="256.0" prefWidth="435.0" style="-fx-background-color: #FDFEFE; -fx-border-width: 5; -fx-border-radius: 15 15 15 15; -fx-border-color: #E67116;">
+         <children>
+            <Label fx:id="lblCorreo" layoutX="20.0" layoutY="25.0" text="Correo electronico">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Label>
+            <TextField fx:id="txtCorreo" layoutX="20.0" layoutY="56.0" prefHeight="47.0" prefWidth="388.0" style="-fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" />
+            <Label fx:id="lblContraseña" layoutX="20.0" layoutY="142.0" text="Contraseña">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font></Label>
+            <PasswordField fx:id="txtContraseñaIniSess" layoutX="21.0" layoutY="173.0" prefHeight="47.0" prefWidth="388.0" style="-fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" />
+         </children>
+      </Pane>
+      <Label fx:id="lblIniciarSesion" layoutX="155.0" layoutY="119.0" text="Iniciar sesion" textFill="#141313">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="105.0" fitWidth="256.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/DienteLeon4.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSiguiente" layoutX="339.0" layoutY="475.0" mnemonicParsing="false" onAction="#ClickEventBtnSiguiente" prefHeight="47.0" prefWidth="133.0" style="-fx-background-color: #E67116; -fx-border-radius: 15 15 15 15;" text="Siguiente" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnRegistrarse" layoutX="37.0" layoutY="475.0" mnemonicParsing="false" onAction="#ClickEventBtnRegistrarse" style="-fx-background-color: #FDFEFE; -fx-border-color: #E67116; -fx-border-radius: 15 15 15 15;" text="Registrarse" textFill="#e67116" />
+    </children>
+</AnchorPane>
